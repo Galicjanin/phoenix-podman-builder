@@ -1,5 +1,5 @@
 # syntax=docker/dockerfile:1
-FROM ubuntu:20.04
+FROM ubuntu
 RUN apt-get update && apt-get -y upgrade
 RUN apt-get install -y build-essential autoconf texinfo genext2fs libtool libhidapi-dev python3 wget
 ENV PATH=$PATH:/app/toolchains/i386-pc-phoenix/i386-pc-phoenix/bin/
